@@ -1,7 +1,7 @@
 # android-cabfare-carwash
 CIS 4321 Android Development, Homework 2, Cabfare and Carwash App
 
-This app lets you calculate your cab fare or how much your cash washes will be, made with Android Studio.
+This app lets you calculate your cab fare or how much your car washes will be, created with Android Studio.
 
 [Full project requirements located here.](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/HW2.docx)
 
@@ -41,7 +41,7 @@ The main activity isn't very eventful, contains 2 simple onclick methods to star
 
 ![cab-fare](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/pictures/cab-fare.png)
 
-The calculate method of the cab fare app is very simple, takes in the number of miles and multiplies it by the given mileage rate.
+The calculate method of the cab fare app is very simple, takes in the number of miles and spits out the base fee, plus the miles multiplied by the given mileage rate.
 
 ```java
 public double calculateCost(double pMiles){
@@ -60,7 +60,7 @@ public double calculateCost(double pMiles){
 
 ![car-wash](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/pictures/car-wash.png)
 
-The calculate method of the car wash app takes the number of washes and which car wash package is checked and spits out a total based on some numbers given prior.
+The calculate method of the car wash app takes the number of washes and whichever car wash package is checked and spits out a total based on some numbers given prior.
 
 ```java
 public double calculateWashesCost(int pWashes, String pChecked){
