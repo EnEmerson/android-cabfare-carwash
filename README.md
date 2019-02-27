@@ -3,15 +3,15 @@ CIS 4321 Android Development, Homework 2, Cabfare and Carwash App
 
 This app lets you calculate your cab fare or how much your cash washes will be, made with Android Studio.
 
-[Full project requirements located here.]()
+[Full project requirements located here.](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/HW2.docx)
 
 ---
 
 ## Main Activity
 
-![main-activity]()
+![main-activity](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/pictures/main-activity.png)
 
-The main activity isn't very eventful, simply contains 2 onclick methods to start the other progrmas within the app.
+The main activity isn't very eventful, contains 2 simple onclick methods to start the other programs within the app.
 
 ```java
 Button carWash = findViewById(R.id.btnCarWash);
@@ -33,11 +33,13 @@ Button carWash = findViewById(R.id.btnCarWash);
 
 ```
 
+[Full java file here](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/java-files/MainActivity.java)
+
 ---
 
 ## Cab Fare
 
-![cab-fare]()
+![cab-fare](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/pictures/cab-fare.png)
 
 The calculate method of the cab fare app is very simple, takes in the number of miles and multiplies it by the given mileage rate.
 
@@ -50,11 +52,13 @@ public double calculateCost(double pMiles){
 
 ```
 
+[Full java file here](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/java-files/CabFareActivity.java)
+
 ---
 
 ## Car Wash
 
-![car-wash]()
+![car-wash](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/pictures/car-wash.png)
 
 The calculate method of the car wash app takes the number of washes and which car wash package is checked and spits out a total based on some numbers given prior.
 
@@ -68,18 +72,18 @@ public double calculateWashesCost(int pWashes, String pChecked){
         switch(washType){
             case "ext":
                 if(washes < 10){
-                    washPricing = extWash;
+                    washPricing = extWash; //10.50
                 }
                 else{
-                    washPricing = pkgExtWash;
+                    washPricing = pkgExtWash; //8.50
                 }
                 break;
             case "extVac":
                 if(washes < 10){
-                    washPricing = extWashAndVac;
+                    washPricing = extWashAndVac; //15.50
                 }
                 else{
-                    washPricing = pkgExtWashAndVac;
+                    washPricing = pkgExtWashAndVac; //12.50
                 }
                 break;
             default:
@@ -94,3 +98,4 @@ public double calculateWashesCost(int pWashes, String pChecked){
     }
 ```
 
+[Full java file here](https://github.com/EnEmerson/android-cabfare-carwash/blob/master/resources/java-files/CarWashActivity.java)
