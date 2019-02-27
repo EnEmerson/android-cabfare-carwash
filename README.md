@@ -14,7 +14,7 @@ This app lets you calculate your cab fare or how much your cash washes will be, 
 The main activity isn't very eventful, contains 2 simple onclick methods to start the other programs within the app.
 
 ```java
-Button carWash = findViewById(R.id.btnCarWash);
+	Button carWash = findViewById(R.id.btnCarWash);
         Button cabFare = findViewById(R.id.btnCabFare);
 
         carWash.setOnClickListener(new View.OnClickListener() {
